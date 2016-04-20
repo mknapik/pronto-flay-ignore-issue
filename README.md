@@ -7,13 +7,16 @@
 git clone git@github.com:mknapik/pronto-flay-ignore-issue.git
 cd pronto-flay-ignore-issue
 bundle
+```
 
 ### Issue
 
 ```bash
 bundle exec flay .
 ```
+
 returns
+
 ```
 Total score (lower is better) = 64
 
@@ -29,6 +32,7 @@ bundle exec pronto run -r flay -c 596484d
 ```
 
 show issues in `spec/` directory even though it should be ignored:
+
 ```
 lib/duplication.rb:2 W: Similar code found in duplication.rb:2, duplication.rb:8
 lib/duplication.rb:8 W: Similar code found in duplication.rb:2, duplication.rb:8
